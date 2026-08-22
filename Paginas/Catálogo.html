@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Para lograr que la mascota del local se vea en la pestaña del navegador -->
+<link rel="icon" type="image/png" href="../Recursos/Local_y_Logo/Mascota.png">
+<title>Catálogo - Centro Plástico Chirri</title>
+<link rel="stylesheet" href="../Css/Mis-Estilos.css">
+</head>
+<body>
+ 
+<!-- ENCABEZADO CON MENÚ DE NAVEGACIÓN -->
+<header id="navegacion">
+<div class="container">
+<div class="imagen-header">
+<img src="../Recursos/Local_y_Logo/Mascota.png" alt="logo">
+<p>Centro Plástico Chirri</p>
+</div>
+<nav class="container-nav">
+<a href="../Index.html" class="nav-item">
+<img src="../Recursos/Iconos/home.png" alt="" class="nav-icon">
+<span>Inicio</span>
+</a>
+<a href="Catálogo.html" class="nav-item active">
+<img src="../Recursos/Iconos/Catálogo.png" alt="" class="nav-icon">
+<span>Catálogo</span>
+</a>
+<a href="Sobre_Nosotros.html" class="nav-item">
+<img src="../Recursos/Iconos/Sobre_Nosotros.png" alt="" class="nav-icon">
+<span>Sobre Nosotros</span>
+</a>
+<a href="ubicacion.html" class="nav-item">
+<img src="../Recursos/Iconos/location.png" alt="" class="nav-icon">
+<span>Localización</span>
+</a>
+<a href="Contacto.html" class="nav-item">
+<img src="../Recursos/Iconos/Contacto.png" alt="" class="nav-icon">
+<span>Contacto</span>
+</a>
+<a href="sostenibilidad.html" class="nav-item">
+<img src="../Recursos/Iconos/Sostenibilidad.png" alt="" class="nav-icon">
+<span>Sostenibilidad</span>
+</a>
+</nav>
+</div>
+</header>
+ 
+<hr>
+ 
+<!-- SECCIÓN PRINCIPAL DEL CATÁLOGO -->
+<main class="contenido-principal">
+<h1 class="titulo-catalogo">Catálogo de Productos</h1>
+ 
+<!-- BÚSQUEDA Y FILTRADO POR CATEGORÍAS -->
+<div class="barra-filtros">
+<div>
+<select id="categoria-select" class="select-categoria">
+<option>Categorías: Todas</option>
+<option>Macetas</option>
+<option>Recipientes</option>
+<option>Bolsas</option>
+<option>Moldes</option>
+</select>
+</div>
+ 
+<div class="buscador-contenedor">
+<span class="icono-lupa">🔍</span>
+<input type="search" placeholder="Buscar Productos...">
+</div>
+</div>
+ 
+<h2>Nuestros Artículos</h2>
+ 
+<!-- MUESTRARIO DE PRODUCTOS -->
+<ul class="lista-productos">
+<li class="producto-item">
+<img src="..\Recursos/Catálogo/Catálogo (19).png" alt="Bolsas">
+<div class="producto-info">
+<h3>Bolsas</h3>
+<p>Categoría: Plástico</p>
+</div>
+ </li>
+<li class="producto-item">
+<img src="..\Recursos\Catálogo/Catálogo (15).png" alt="Recipientes">
+<div class="producto-info">
+<h3>Recipientes</h3>
+<p>Categoría: Plástico</p>
+</div>
+ </li>
+<li class="producto-item">
+<img src="..\Recursos\Catálogo/Catálogo (7).png" alt="Tazas">
+<div class="producto-info">
+<h3>Tazas de Comida</h3>
+<p>Categoría: Vajilla</p>
+</div>
+ </li>
+<li class="producto-item">
+<img src="..\Recursos\Catálogo/Catálogo (5).png" alt="Contenedores">
+<div class="producto-info">
+<h3>Contenedores Hermeticos</h3>
+<p>Categoría: Vidrio</p>
+</div>
+</li>
+<li class="producto-item">
+<img src="..\Recursos\Catálogo/Catálogo (2).png" alt="Frascos">
+<div class="producto-info">
+<h3>Frascos de Vidrio</h3>
+<p>Categoría: Vidrio</p>
+</div>
+</li>
+<li class="producto-item">
+<img src="..\Recursos/Catálogo/Catálogo (16).png" alt="Macetas">
+<div class="producto-info">
+<h3>Macetas</h3>
+<p>Categoría: Plástico</p>
+</div>
+</li>
+</ul>
+</main>
+ 
+<hr>
+ 
+<!-- PIE DE PÁGINA -->
+<footer id="pie-pagina">
+<div class="container">
+<div class="logo">
+<img src="../Recursos/Local_y_Logo/Logo.png" alt="Logo del Local">
+</div>
+<ul class="lista">
+<li>
+<div class="whatsapp">
+<form action="https://wa.me/50687559420">
+<button type="submit">
+<img src="../Recursos/Iconos/WhatsApp-Logo-Claro.png" alt="WhatsApp" width="35">
+</button>
+</form>
+<p>8755 9420</p>
+</div>
+</li>
+<li>
+<div class="facebook">
+<form action="https://www.facebook.com/share/194swaBTwd/">
+<button type="submit">
+<img src="../Recursos/Iconos/Facebook-Claro.png" alt="Facebook" width="25">
+</button>
+</form>
+<p>Centro Plástico Chirri</p>
+</div>
+</li>
+<li>
+<div class="telefono">
+<button type="button">
+<img src="../Recursos/Iconos/telefono-Claro.webp" alt="telefono" width="25">
+</button>
+<p>2454 2252</p>
+</div>
+</li>
+</ul>
+ 
+<div class="derechos">
+<p>&copy; 1992 CentroPlásticoChirri. Todos los derechos reservados</p>
+</div>
+</div>
+</footer>
+ 
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Para lograr que la mascota del local se vea en la pestaña del navegador -->
+    <link rel="icon" type="image/png" href="../Recursos/Local_y_Logo/Mascota.png">
+    <title>Localización</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-body-tertiary">
+
+    <!-- ---------- Encabezado y navegación ---------- -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="../Index.html">
+                    <img src="../Recursos/Local_y_Logo/Mascota.png" alt="Logo" width="45" height="45" class="rounded-circle bg-white p-1">
+                    <span>Centro Plástico Chirri</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center gap-2" href="../Index.html">
+                                <img src="../Recursos/Iconos/home.png" alt="" width="22" height="22">
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center gap-2" href="Catálogo.html">
+                                <img src="../Recursos/Iconos/Catálogo.png" alt="" width="22" height="22">
+                                <span>Catálogo</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center gap-2" href="Sobre_Nosotros.html">
+                                <img src="../Recursos/Iconos/Sobre_Nosotros.png" alt="" width="22" height="22">
+                                <span>Sobre Nosotros</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold d-flex align-items-center justify-content-center gap-2" aria-current="page" href="ubicacion.html">
+                                <img src="../Recursos/Iconos/location.png" alt="" width="22" height="22">
+                                <span>Localización</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center gap-2" href="Contacto.html">
+                                <img src="../Recursos/Iconos/Contacto.png" alt="" width="22" height="22">
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center justify-content-center gap-2" href="sostenibilidad.html">
+                                <img src="../Recursos/Iconos/Sostenibilidad.png" alt="" width="22" height="22">
+                                <span>Sostenibilidad</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+
+        <!-- ---------- Dirección + mapa ---------- -->
+        <section aria-labelledby="titulo-donde">
+            <p class="text-success text-uppercase fw-bold small mb-1">Sarchí Norte, Valverde Vega &middot; Alajuela</p>
+            <h1 class="display-5 fw-bold text-success-emphasis text-uppercase" id="titulo-donde">¿Dónde puede encontrarnos?</h1>
+
+            <div class="row g-4 mt-2 align-items-start">
+
+                <div class="col-12 col-lg-4">
+                    <div class="card border-dark border-3 rounded-4 shadow h-100">
+                        <div class="card-body">
+                            <h2 class="h6 text-uppercase text-success fw-bold">Dirección</h2>
+                            <p class="fs-5 fw-semibold">100 mts norte del templo católico de Sarchí.</p>
+
+                            <h2 class="h6 text-uppercase text-success fw-bold">Cómo llegar</h2>
+                            <p class="text-body-secondary">
+                                Estamos en la esquina, en el edificio de madera color naranja, al lado
+                                de la Carnicería La Sarchiseña y frente a Boutique Americana.
+                            </p>
+
+                            <a class="btn btn-success btn-lg w-100 border-dark border-3 rounded-pill fw-bold"
+                               href="https://maps.app.goo.gl/gc79tpobSTn2KfhbA" target="_blank" rel="noopener">
+                                Abrir en Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <figure class="figure w-100">
+                        <div class="ratio ratio-16x9 border border-dark border-3 rounded-4 overflow-hidden shadow">
+                            <iframe
+                                src="https://www.google.com/maps?q=10.0906558,-84.3463215&amp;hl=es&amp;z=18&amp;output=embed"
+                                title="Mapa con la ubicación del Centro Plástico Chirri en Sarchí"
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                allowfullscreen></iframe>
+                        </div>
+                        <figcaption class="figure-caption text-center mt-2">Centro Plástico Chirri &middot; Sarchí, Alajuela</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="my-5 border-dark border-2 opacity-75">
+
+        <!-- ---------- Instalaciones ---------- -->
+        <section aria-labelledby="titulo-local">
+            <h2 class="h1 fw-bold text-success-emphasis text-uppercase border-bottom border-dark border-3 pb-2 mb-4" id="titulo-local">Conocé nuestras instalaciones</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <figure class="figure w-100">
+                        <a href="https://maps.app.goo.gl/gc79tpobSTn2KfhbA" target="_blank" rel="noopener">
+                            <img src="../Recursos/Local_y_Logo/fachada-1.png"
+                                 alt="Fachada del Centro Plástico Chirri vista desde la Avenida 1"
+                                 class="img-fluid rounded-4 border border-dark border-3 shadow">
+                        </a>
+                        <figcaption class="figure-caption text-center mt-2">Vista desde la Avenida 1</figcaption>
+                    </figure>
+                </div>
+                <div class="col">
+                    <figure class="figure w-100">
+                        <a href="https://maps.app.goo.gl/gc79tpobSTn2KfhbA" target="_blank" rel="noopener">
+                            <img src="../Recursos/Local_y_Logo/fachada-2.png"
+                                 alt="Esquina del local del Centro Plástico Chirri junto a la Carnicería La Sarchiseña"
+                                 class="img-fluid rounded-4 border border-dark border-3 shadow">
+                        </a>
+                        <figcaption class="figure-caption text-center mt-2">La esquina, junto a la carnicería</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5 border-dark border-2 opacity-75">
+
+        <!-- ---------- Horario ---------- -->
+        <section aria-labelledby="titulo-horario">
+            <h2 class="h1 fw-bold text-success-emphasis text-uppercase border-bottom border-dark border-3 pb-2 mb-4" id="titulo-horario">Horario de atención</h2>
+
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle border border-dark border-3 rounded-4 overflow-hidden mb-0">
+                    <caption class="text-center">Los feriados nacionales permanecemos cerrados.</caption>
+                    <thead class="table-success">
+                        <tr>
+                            <th scope="col">Día</th>
+                            <th scope="col">Atendemos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><th scope="row">Lunes</th>    <td>08:00 &ndash; 17:00</td></tr>
+                        <tr><th scope="row">Martes</th>   <td>08:00 &ndash; 17:00</td></tr>
+                        <tr><th scope="row">Miércoles</th><td>08:00 &ndash; 17:00</td></tr>
+                        <tr><th scope="row">Jueves</th>   <td>08:00 &ndash; 17:00</td></tr>
+                        <tr><th scope="row">Viernes</th>  <td>08:00 &ndash; 17:00</td></tr>
+                        <tr><th scope="row">Sábado</th>   <td>08:00 &ndash; 15:00</td></tr>
+                        <tr><th scope="row">Domingo</th>  <td><span class="badge text-bg-danger">Cerrado</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ---------- Pie de página ---------- -->
+    <footer class="bg-success text-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-4 text-center text-lg-start">
+
+                <div class="col-12 col-lg-3">
+                    <img src="../Recursos/Local_y_Logo/Logo.png" alt="Logo del Local" class="img-fluid rounded-4" width="140">
+                </div>
+
+                <div class="col-12 col-lg-9">
+                    <ul class="nav justify-content-center justify-content-lg-end gap-3">
+                        <li class="nav-item">
+                            <a class="btn btn-light border-dark border-2 rounded-pill d-flex align-items-center gap-2"
+                               href="https://wa.me/50687559420" target="_blank" rel="noopener">
+                                <img src="../Recursos/Iconos/WhatsApp-Logo-Claro.png" alt="" width="28">
+                                <span class="fw-semibold text-nowrap">8755 9420</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-light border-dark border-2 rounded-pill d-flex align-items-center gap-2"
+                               href="https://www.facebook.com/share/194swaBTwd/" target="_blank" rel="noopener">
+                                <img src="../Recursos/Iconos/Facebook-Claro.png" alt="" width="22">
+                                <span class="fw-semibold text-nowrap">Centro Plástico Chirri</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-light border-dark border-2 rounded-pill d-flex align-items-center gap-2"
+                               href="tel:+50624542252">
+                                <img src="../Recursos/Iconos/telefono-Claro.webp" alt="" width="22">
+                                <span class="fw-semibold text-nowrap">2454 2252</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="border-white opacity-50">
+
+            <p class="text-center small mb-0">&copy; 1992 CentroPlásticoChirri. Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
