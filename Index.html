@@ -1,131 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Para lograr que la mascota del local se vea en la pestaña del navegador -->
-<link rel="icon" type="image/png" href="Recursos/Local_y_Logo/Mascota.png">
-<title>Inicio - Centro Plástico Chirri</title>
-<link rel="stylesheet" href="Css/Mis-Estilos.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Plástico Chirri - Inicio</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body class="bg-white d-flex flex-column min-vh-100">
  
-<!-- ENCABEZADO CON LOGO Y TÍTULO -->
-<header id="navegacion">
-<div class="container">
-<div class="imagen-header">
-<img src="Recursos/Local_y_Logo/Mascota.png" alt="logo">
-<p>Centro Plástico Chirri</p>
-</div>
-</div>
-</header>
+    <!-- Franja verde superior -->
+    <div class="bg-success py-1" style="background-color: #198754 !important;"></div>
  
-<hr>
+    <!-- Encabezado del Index: Solo Logo con mascota y Nombre -->
+    <header class="container py-3 text-center">
+        <div class="d-flex flex-column align-items-center justify-content-center gap-2">
+            <img src="/Recursos/Local_y_Logo/Mascota.png" alt="Mascota Centro Plástico Chirri" class="rounded-circle shadow-sm border border-2 border-success p-1 bg-white" style="width: 75px; height: 75px; object-fit: cover;" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2275%22 height=%2275%22%3E%3Crect width=%2275%22 height=%2275%22 fill=%22%23ccc%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23666%22 font-size=%2212%22%3ELogo%3C/text%3E%3C/svg%3E'">
+            <h1 class="h5 m-0 fw-bold text-dark">CENTRO PLÁSTICO CHIRRI</h1>
+        </div>
+    </header>
  
-<!-- CONTENIDO PRINCIPAL DE LA PÁGINA DE INICIO -->
-<main class="contenido-principal">
-<!-- SECCIÓN DE BIENVENIDA Y PRESENTACIÓN -->
-<section class="inicio-hero">
-<img src="Recursos/Local_y_Logo/fachada-1.png" alt="Centro Plástico Chirri">
-<div class="inicio-hero-texto">
-<h1>Centro Plástico Chirri</h1>
-<p>Somos tu mejor opción en productos plásticos de calidad.</p>
-<a href="Paginas/Sobre_Nosotros.html" class="btn-conoce">Conoce más</a>
-</div>
-</section>
+    <!-- Contenido Principal -->
+    <main class="container my-4 flex-grow-1">
+        <!-- Bloque de bienvenida (Sin botón de modal) -->
+        <div class="p-4 p-md-5 mb-5 rounded-4 text-white shadow position-relative overflow-hidden" style="background: linear-gradient(135deg, #198754 0%, #157347 100%);">
+            <div class="row align-items-center g-4 position-relative z-1">
+                <div class="col-lg-7">
+                    <span class="badge bg-white text-success mb-2 px-3 py-1 rounded-pill fw-semibold">Calidad y Variedad</span>
+                    <h2 class="display-6 fw-bold mb-3">Somos la mejor opción en productos plásticos de calidad.</h2>
+                    <p class="lead mb-4 fs-6 opacity-90">Encuentra todo lo que necesitas para tu hogar o negocio con la mejor durabilidad y excelentes precios.</p>
+                    <a href="Paginas/Sobre_Nosotros.html" class="btn btn-light text-success fw-bold px-4 py-2 shadow-sm rounded-pill">Conocé más</a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="position-relative rounded-3 overflow-hidden shadow-sm bg-white p-2 text-center">
+                        <img src="/Recursos/Local_y_Logo/fachada-2.png" alt="Local o Instalaciones" class="img-fluid w-100 rounded" style="max-height: 240px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
  
-<h2>Nuestros Servicios y Secciones</h2>
+        <!-- Nuestros Servicios y Secciones con enlaces exactos -->
+        <section class="mb-5">
+            <h3 class="h5 fw-bold text-secondary text-center mb-4 text-uppercase">Nuestros Servicios y Secciones</h3>
+            <div class="mx-auto" style="max-width: 800px;">
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                    <div class="col">
+                        <a href="Paginas/Catálogo.html" class="text-decoration-none">
+                            <div class="card border-0 shadow-sm p-3 h-100 bg-light rounded-3 d-flex flex-row align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-success text-white p-2 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-grid-fill"></i>
+                                    </div>
+                                    <span class="fw-semibold text-dark">Catálogo</span>
+                                </div>
+                                <i class="bi bi-chevron-right text-muted"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="Paginas/ubicacion.html" class="text-decoration-none">
+                            <div class="card border-0 shadow-sm p-3 h-100 bg-light rounded-3 d-flex flex-row align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-success text-white p-2 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                    </div>
+                                    <span class="fw-semibold text-dark">Ubicación</span>
+                                </div>
+                                <i class="bi bi-chevron-right text-muted"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="Paginas/Contacto.html" class="text-decoration-none">
+                            <div class="card border-0 shadow-sm p-3 h-100 bg-light rounded-3 d-flex flex-row align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-success text-white p-2 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-headset"></i>
+                                    </div>
+                                    <span class="fw-semibold text-dark">Contacto</span>
+                                </div>
+                                <i class="bi bi-chevron-right text-muted"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="Paginas/sostenibilidad.html" class="text-decoration-none">
+                            <div class="card border-0 shadow-sm p-3 h-100 bg-light rounded-3 d-flex flex-row align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-success text-white p-2 rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px;">
+                                        <i class="bi bi-recycle"></i>
+                                    </div>
+                                    <span class="fw-semibold text-dark">Sostenibilidad</span>
+                                </div>
+                                <i class="bi bi-chevron-right text-muted"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
  
-<!-- ACCESOS RÁPIDOS A LAS DIFERENTES SECCIONES -->
-<ul class="lista-accesos">
-<li>
-<a href="Paginas/Catálogo.html">
-<img src="Recursos/Iconos/Catálogo.png" alt="Catálogo" class="acceso-icono">
-<div>
-<h3>Catálogo</h3>
-<p class="acceso-desc">Explora nuestra variedad de productos.</p>
-</div>
-<span class="flecha">></span>
-</a>
-</li>
-<li>
-<a href="Paginas/ubicacion.html">
-<img src="Recursos/Iconos/location.png" alt="Ubicación" class="acceso-icono">
-<div>
-<h3>Ubicación</h3>
-<p class="acceso-desc">Encuéntranos fácilmente en el mapa.</p>
-</div>
-<span class="flecha">></span>
-</a>
-</li>
-<li>
-<a href="Paginas/Contacto.html">
-<img src="Recursos/Iconos/Contacto.png" alt="Contacto" class="acceso-icono">
-<div>
-<h3>Contacto</h3>
-<p class="acceso-desc">Estamos para ayudarte con tus dudas.</p>
-</div>
-<span class="flecha">></span>
-</a>
-</li>
-<li>
-<a href="Paginas/sostenibilidad.html">
-<img src="Recursos/Iconos/Sostenibilidad.png" alt="Sostenibilidad" class="acceso-icono">
-<div>
-<h3>Sostenibilidad</h3>
-<p class="acceso-desc">Conoce nuestro compromiso ambiental.</p>
-</div>
-<span class="flecha">></span>
-</a>
-</li>
-</ul>
+    <!-- Footer exacto al de la referencia fotográfica -->
+   <!-- ---------- Pie de página ---------- -->
+    <footer class="bg-success text-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-4 text-center text-lg-start">
  
-</main>
+                <div class="col-12 col-lg-3">
+                    <img src="../Recursos/Local_y_Logo/Logo.png" alt="Logo del Local" class="img-fluid rounded-4" width="140">
+                </div>
  
-<hr>
+                <div class="col-12 col-lg-9">
+                    <ul class="nav justify-content-center justify-content-lg-end gap-3">
+                        <li class="nav-item">
+                            <a class="btn btn-light border-dark border-2 rounded-pill d-flex align-items-center gap-2"
+                               href="https://wa.me/50687559420" target="_blank" rel="noopener">
+                                <img src="../Recursos/Iconos/WhatsApp-Logo-Claro.png" alt="" width="28">
+                                <span class="fw-semibold text-nowrap">8755 9420</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-light border-dark border-2 rounded-pill d-flex align-items-center gap-2"
+                               href="https://www.facebook.com/share/194swaBTwd/" target="_blank" rel="noopener">
+                                <img src="../Recursos/Iconos/Facebook-Claro.png" alt="" width="22">
+                                <span class="fw-semibold text-nowrap">Centro Plástico Chirri</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-light border-dark border-2 rounded-pill d-flex align-items-center gap-2"
+                               href="tel:+50624542252">
+                                <img src="../Recursos/Iconos/telefono-Claro.webp" alt="" width="22">
+                                <span class="fw-semibold text-nowrap">2454 2252</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
  
-<!-- PIE DE PÁGINA -->
-<footer id="pie-pagina">
-<div class="container">
-<div class="logo">
-<img src="Recursos/Local_y_Logo/Logo.png" alt="Logo del Local">
-</div>
-<ul class="lista">
-<li>
-<div class="whatsapp">
-<form action="https://wa.me/50687559420">
-<button type="submit">
-<img src="Recursos/Iconos/WhatsApp-Logo-Claro.png" alt="WhatsApp" width="35">
-</button>
-</form>
-<p>8755 9420</p>
-</div>
-</li>
-<li>
-<div class="facebook">
-<form action="https://www.facebook.com/share/194swaBTwd/">
-<button type="submit">
-<img src="Recursos/Iconos/Facebook-Claro.png" alt="Facebook" width="25">
-</button>
-</form>
-<p>Centro Plástico Chirri</p>
-</div>
-</li>
-<li>
-<div class="telefono">
-<button type="button">
-<img src="Recursos/Iconos/telefono-Claro.webp" alt="telefono" width="25">
-</button>
-<p>2454 2252</p>
-</div>
-</li>
-</ul>
+            </div>
  
-<div class="derechos">
-<p>&copy; 1992 CentroPlásticoChirri. Todos los derechos reservados</p>
-</div>
-</div>
-</footer>
+            <hr class="border-white opacity-50">
  
+            <p class="text-center small mb-0">&copy; 1992 CentroPlásticoChirri. Todos los derechos reservados</p>
+        </div>
+    </footer>
+ 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
