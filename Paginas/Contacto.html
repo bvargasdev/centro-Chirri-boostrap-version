@@ -1,80 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Link a Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Link de Iconos -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Para lograr que la mascota del local se vea en la pestaña del navegador -->
     <link rel="icon" type="image/png" href="../Recursos/Local_y_Logo/Mascota.png">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../Css/Mis-Estilos.css">
 </head>
 <body>
-    <header id="navegacion">
-        <div class="container">
-            <div class="imagen-header">
-                <img src="../Recursos/Local_y_Logo/Mascota.png" alt="logo">
-                    <p>Centro Plástico Chirri</p>
-            </div>
-            <nav class="container-nav">
-                <a href="../Index.html" class="nav-item">
-                    <img src="../Recursos/Iconos/home.png" alt="" class="nav-icon">
-                    <span>Inicio</span>
-                </a>
-                <a href="Catálogo.html" class="nav-item">
-                    <img src="../Recursos/Iconos/Catálogo.png" alt="" class="nav-icon">
-                    <span>Catálogo</span>
-                </a>
-                <a href="Sobre_Nosotros.html" class="nav-item">
-                    <img src="../Recursos/Iconos/Sobre_Nosotros.png" alt="" class="nav-icon">
-                    <span>Sobre Nosotros</span>
-                </a>
-                <a href="ubicacion.html" class="nav-item">
-                    <img src="../Recursos/Iconos/location.png" alt="" class="nav-icon">
-                    <span>Localización</span>
-                </a>
-                <a href="Contacto.html" class="nav-item active">
-                    <img src="../Recursos/Iconos/Contacto.png" alt="" class="nav-icon">
-                    <span>Contacto</span>
-                </a>
-                <a href="sostenibilidad.html" class="nav-item">
-                    <img src="../Recursos/Iconos/Sostenibilidad.png" alt="" class="nav-icon">
-                    <span>Sostenibilidad</span>
-                </a>
-            </nav>
-        </div>
-    </header>
-    <hr>
+
+    <!-- header y nav de la Página -->
+<header id="encabezado">
+  <nav class="navbar navbar-expand-lg bg-success">
+  <div class="container-fluid">
+        <a class="navbar-brand" style="color: white;" href="#">
+          <img src="../Recursos/Local_y_Logo/Mascota.png" alt="Mascota del Local" width="100" style="border: 1px solid black; border-radius: 20px; box-shadow: 2px 2px 5px black;">
+          Centro Plástico Chirri
+        </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end fs-6" id="navbar-toggler">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item">
+        <a class="nav-link d-flex align-items-center justify-content-center gap-1" href="../Index.html">
+        <img src="../Recursos/Iconos/home.png" alt="" width="17" height="17">
+        <span>Inicio</span>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link d-flex align-items-center justify-content-center gap-1" aria-current="page" href="Catálogo.html">
+        <img src="../Recursos/Iconos/Catálogo.png" alt="" width="17" height="17">
+        <span>Catálogo</span>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link d-flex align-items-center justify-content-center gap-1" href="Sobre_Nosotros.html">
+        <img src="../Recursos/Iconos/Sobre_Nosotros.png" alt="" width="17" height="17">
+        <span>Sobre Nosotros</span>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link d-flex align-items-center justify-content-center gap-1" href="ubicacion.html">
+        <img src="../Recursos/Iconos/location.png" alt="" width="17" height="17">
+        <span>Localización</span>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link active fw-bold d-flex align-items-center justify-content-center gap-1" href="Contacto.html">
+        <img src="../Recursos/Iconos/Contacto.png" alt="" width="17" height="17">
+        <span>Contacto</span>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link d-flex align-items-center justify-content-center gap-1" href="sostenibilidad.html">
+        <img src="../Recursos/Iconos/Sostenibilidad.png" alt="" width="17" height="17">
+        <span>Sostenibilidad</span>
+        </a>
+        </li>
+      </ul>    
+    </div>
+  </div>
+  </nav>
+</header>
+<hr>
 
         <!-- Sección sobre la información de contacto -->
-    <section id="hero-conta">
+    <section id="hero-conta" class="container text-center">
             <h2>Pódes Realizar tus consultas y Cotizaciones</h2>
             <h2>Via WhatsApp o al Teléfono</h2>
-        <div class="container-hero">
-                <div class="conta-whatsapp">
+        <div class="row info" style="background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../Recursos/Local_y_Logo/Local-actual.png);">
+                <div class="conta-whatsapp" style="font-weight:bold;">
                         <form action="https://wa.me/50687559420">
-                            <button>
-                                <img src="../Recursos/Iconos/logoWhatsApp.png" 
+                            <button style="background-color: rgb(81, 80, 78); margin-top: 10px;">
+                                <img src="../Recursos/Iconos/WhatsApp-Logo-Claro.png" 
                                 alt="WhatsApp"
-                                width="40">
+                                width="80">
                             </button>
                         </form>
-                        <p>WhatsApp <br>+506 8755 9420</p>
+                        <p style="color: rgb(251, 249, 249); font-size: 1.5rem;">WhatsApp <br>+506 8755 9420</p>
                 </div>
-                <div class="conta-telefono">
+                <div class="conta-telefono" style="font-weight:bold;">
                        <form action="tel:+50624542252">
-                            <button>
-                                <img src="../Recursos/Iconos/iconoTelefono.png" 
+                            <button style="background-color: rgb(81, 80, 78); margin-top: 10px;">
+                                <img src="../Recursos/Iconos/telefono-Claro.webp" 
                                 alt="telefono"
-                                width="20">
+                                width="60">
                             </button>
                         </form>
-                        <p>Teléfono <br>2454 2252</p>
+                        <p style="color: rgb(251, 249, 249); font-size: 1.5rem;">Teléfono <br>2454 2252</p>
                 </div>
-            <div class="mascota-info">
+            <div class="mascota-info" style="font-weight:bold;">
                 <img src="../Recursos/Local_y_Logo/Mascota.png" 
                 alt="Mascota"
-                width="70">
-                <p>Centro <br>Plástico <br>Chirri</p>
+                width="100" style="border: 1px solid black; box-shadow: 2px 2px 5px black; border-radius: 10px;">
+                <p style="color: rgb(251, 249, 249); font-size: 1.5rem;">Centro <br>Plástico <br>Chirri</p>
             </div>
         </div>
     </section>
@@ -82,86 +107,75 @@
     <hr>
 
     <!-- Sección de Preguntas Frecuentes -->
-    <section id="preguntas-frecuentes">
+    <section id="preguntas-frecuentes" class="container text-center">
             <h2>Apartado de Preguntas Frecuentes</h2>
         <div class="container-preguntas">
                 <!-- Lista de las Preguntas más Frecuentes -->
-                <ol type="1" start="1">
-                    <li>De que forma se realizan las ventas de las bolsas plasticas</li>
+                <ol type="1" start="1" style="list-style: none;">
+                    <li><strong>De que forma se realizan las ventas de las bolsas plasticas</strong></li>
                     <p>Las Bolsas se vende por peso, siendo el minimo un cuarto de kilo.</p>
-                    <li>Cúal es el precio de las bolsas</li>
+                    <li><strong>Cúal es el precio de las bolsas</strong></li>
                     <p>Esto varía dependiendo del tamaño de las bolsas.</p>
-                    <li>Cómo saber las medidas de las bolsas </li>
+                    <li><strong>Cómo saber las medidas de las bolsas </strong></li>
                     <p>Estás se miden en pulgadas, no en centímetros.</p>
-                    <li>Solo se realizan ventas de bolsas plásticas</li>
+                    <li><strong>Solo se realizan ventas de bolsas plásticas</strong></li>
                     <p>Dentro del local podrás encontrar gran variedad de artículos plásticos, para el hogar, repostería y bolsas de varios tipos y materiales, además de productos de limpieza  entre otros.</p>
-                    <li>Sistema de apartado </li>
+                    <li><strong>Sistema de apartado </strong></li>
                     <p>Existe el sistema de apartado, el cual se realiza con el pago de una tercera parte de la compra, para con esto brindar un plazo de mes y medio para su retiro.</p>
-                    <li>Compras al por mayor </li>
+                    <li><strong>Compras al por mayor </strong></li>
                     <p>Estás se pueden realizar con un periodo de anticipación y se debe brindar un adelanto del pago del producto.</p>
-                    <li>Bolsas por unidad</li>
+                    <li><strong>Bolsas por unidad</strong></li>
                     <p>La únicas bolsas las cuales vendemos por unidad serían las bolsas de gran tamaño, por ejemplo las bolsas de jardín.</p>
-                    <li>Nuestros métodos de pago </li>
+                    <li><strong>Nuestros métodos de pago </strong></li>
                     <p>Efectivo, tarjetas o Sinpe móvil</p>
-                    <li>Pedidos en linea</li>
+                    <li><strong>Pedidos en linea</strong></li>
                     <p>Estos estarán habilitados por medio de nuestro WhatsApp.</p>
                 </ol>
         </div>
     </section>
 
 
-    <hr>
-
-    <!-- Estructura del pie de página -->
-    <footer id="pie-pagina">
-        <div class="container">
-            <div class="logo">
-                <img src="../Recursos/Local_y_Logo/Logo.png" 
-                alt="Logo del Local">
+<hr>
+<!-- Footer (Pie de Página) -->
+    <footer class="bg-success text-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-4 text-center text-lg-start">
+ 
+                <div class="col-12 col-lg-3">
+                    <img src="../Recursos/Local_y_Logo/Logo.png" alt="Logo del Local" class="img-fluid rounded-4" width="100" style="border: 1px solid black;">
+                </div>
+ 
+                <div class="col-12 col-lg-9">
+                    <ul class="nav justify-content-center justify-content-lg-end gap-3">
+                        <li class="nav-item">
+                            <a class="btn btn-light border-dark border-2 rounded-pill d-flex align-items-center gap-2"
+                               href="https://wa.me/50687559420" target="_blank" rel="noopener">
+                                <img src="../Recursos/Iconos/WhatsApp-Logo-Claro.png" alt="" width="28">
+                                <span class="fw-semibold text-nowrap">8755 9420</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-light border-dark border-2 rounded-pill d-flex align-items-center gap-2"
+                               href="https://www.facebook.com/share/194swaBTwd/" target="_blank" rel="noopener">
+                                <img src="../Recursos/Iconos/Facebook-Claro.png" alt="" width="22">
+                                <span class="fw-semibold text-nowrap">Centro Plástico Chirri</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-light border-dark border-2 rounded-pill d-flex align-items-center gap-2"
+                               href="tel:+50624542252">
+                                <img src="../Recursos/Iconos/telefono-Claro.webp" alt="" width="22">
+                                <span class="fw-semibold text-nowrap">2454 2252</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+ 
             </div>
-            <ul class="lista">
-                <li>
-                    <div class="whatsapp">
-                        <form action="https://wa.me/50687559420">
-                            <button>
-                                <img src="../Recursos/Iconos/WhatsApp-Logo-Claro.png" 
-                                alt="WhatsApp"
-                                width="35">
-                            </button>
-                        </form>
-                    <p>8755 9420</p>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="facebook">
-                        <form action="https://www.facebook.com/share/194swaBTwd/">
-                            <button>
-                                <img src="../Recursos/Iconos/Facebook-Claro.png" 
-                                alt="Facebook"
-                                width="25">
-                            </button>
-                        </form>
-                    <p>Centro Plástico Chirri</p>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="telefono">
-                        <button>
-                            <img src="../Recursos/Iconos/telefono-Claro.webp" 
-                            alt="telefono"
-                            width="25">
-                        </button>
-                        <p>2454 2252</p>
-                    </div>
-                </li>
-            </ul>
-
-            <div class="derechos">
-                <p>&copy; 1992 CentroPlásticoChirri. Todos los derechos reservados</p>
-            </div>
+  
+            <p class="text-center small mb-0">&copy; 1992 CentroPlásticoChirri. Todos los derechos reservados</p>
         </div>
     </footer>
+
 </body>
 </html>
